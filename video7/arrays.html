@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="css/micss.css">
+<script>
+
+ var partesPC = ["Monitor","Mouse","Teclado","Camara","CPU","PlacaMadre","MemoriaRam","HDD"];
+ var herramientas = new Array("martillo","destornillador");
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+
+	    /*
+       for (let index = 0; index < partesPC.length; index++) {
+         
+        document.write(""+partesPC[index]+","); 
+       }
+       */
+
+
+       partesPC.forEach(  indice => {
+
+        document.write(indice);
+      });
+		
+ 
+		
+		
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>

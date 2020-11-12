@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #primer_parrafo{
+            background-color:red ;
+        }
+
+
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>        
+  $(document).ready(function () {
+       $("#primer_parrafo").css("background-color", "blue");
+
+       $(".destacado").css("border","solid 0.25em red");
+  });
+</script>
+ 
+</head>
+<body>
+    <p id="primer_parrafo">primer parrafo</p>
+    <p class="destacado">segundo parrafo</p>
+    <p>tercer parrafo</p>
+    
+</body>
+</html>

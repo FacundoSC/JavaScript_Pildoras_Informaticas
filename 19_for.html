@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     
+  
+</head>
+<body id="body">
+
+    <h1>bienvenidos</h1>
+
+   <!--
+     <script>
+     var meses = new Array ("enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre");
+
+     for (let index = 0; index < meses.length; index++) {
+         document.write( meses[index]+"<br>");
+         
+     }
+    
+  
+
+     </script>
+    
+    -->
+    <script>
+     
+     var trabajadores = new Array();
+     var nombre = prompt("ingrese los nombre de los trabajadores", " el valor salir  mostrara la lista de todos los trabajadores");
+     var indice = 0;
+      
+     while (nombre != "salir") {
+        
+        trabajadores[indice]= nombre;
+        indice++;
+        nombre = prompt("ingrese los nombre de los trabajadores", " el valor salir  mostrara la lista de todos los trabajadores");
+     }
+
+     for (let index = 0; index < trabajadores.length; index++) {
+          document.write(trabajadores[index]+"<br>");         
+     }
+      
+    </script>
+
+
+    
+</body>
+</html>

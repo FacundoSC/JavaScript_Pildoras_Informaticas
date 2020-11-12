@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraArcaica</title>
+     <script>
+        function Suma(num1,num2){
+            document.write("el resultado de la suma es :"+ (num1 + num2));
+        }
+        function Resta(num1,num2){
+            document.write("el resultado de la resta es :"+ (num1-num2));
+        }
+        function Multiplica(num1,num2){ 
+            document.write("el resultado de la multiplicación es :"+(num1*num2));
+        }
+        function Divide(num1,num2){
+            document.write("el resultado de la división es :"+(num1/num2));
+        }
+       
+    </script>
+
+</head>
+<body>
+
+       <script>
+        do {
+        var operacion = prompt("que operacion desea realizar","EJ:suma,resta,multiplicacion,division");
+        
+        var num1 = parseInt(prompt("ingrese el primer numero :"));
+        var num2 = parseInt(prompt("ingrese el segundo numero :"));
+           switch (operacion) {
+               case "suma":
+                       Suma(num1,num2);
+                   break;
+               case "resta":
+                       Resta(num1,num2);
+                   break;
+                case "multiplicacion":
+                       Multiplica(num1,num2);
+                   break;
+                case "division":
+                      Divide(num1,num2);
+                   break;
+               default:
+                   document.write("operacion no contemplada ,por favor contactese con el administrador!!!")
+                   break;
+           }
+            var repetir =prompt("desea repetir", "si o no");
+
+              
+            
+        } while (repetir == "si");  
+
+        document.clear();
+
+       </script>
+    
+</body>
+</html>

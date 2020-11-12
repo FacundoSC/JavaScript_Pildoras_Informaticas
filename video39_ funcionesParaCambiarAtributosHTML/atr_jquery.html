@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(
+            function () {
+                //document.querySelector("img").addEventListener("mouseover",cambiar,false);
+                document.querySelector("img").addEventListener("mouseover",cambiar,false); 
+                document.querySelector("img").addEventListener("mouseout", reemplazar,false);
+
+            }
+
+         );
+
+         function cambiar (){
+           $("img").attr("src","../img/personaje-batman.jpg")
+         }
+         function reemplazar (){
+           $("img").attr("src","../img/batman.jpg")
+         }
+
+   
+    </script>
+</head>
+<body>
+    
+    <img src="../img/batman.jpg" alt="batman">
+</body>
+</html>

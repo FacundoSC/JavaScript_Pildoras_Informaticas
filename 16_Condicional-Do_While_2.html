@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional While 2</title>
+
+    <script>
+       
+       do {
+        nombre = prompt("ingresar el nombre","Escribe aqui el nombre");
+       } while (!isNaN(nombre));
+
+       do {
+        edad = prompt("ingresar la edad","Escribe aqui la edad");
+       } while (isNaN(edad) || edad>110 || edad<0);
+       do {
+        email = prompt("ingresar el email","Escribe aqui el email");
+       } while (!isNaN(email));
+
+    </script>
+</head>
+<body>
+
+
+    <div id="contenido">
+        <p>nombre: 
+        <script>  
+         document.write(nombre);
+        </script>
+        </p>
+        <p>Edad:
+            <script>  
+                document.write(edad);
+            </script>
+        </p>
+        <p>email:
+            <script>
+                document.write(email);
+            </script>
+        </p>
+    </div>
+
+    
+</body>
+</html>

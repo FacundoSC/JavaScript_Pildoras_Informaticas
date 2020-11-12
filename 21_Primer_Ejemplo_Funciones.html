@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>que dia es hoy</title>
+</head>
+ <script>
+     function dia_de_hoy(){
+         var hoy = new Date(); // objeto de tipo string
+         document.write(hoy.toDateString()); // el metodo toDateString transforma  el objeto string en un formato mas corto.
+     }
+
+ </script>
+
+<body aling = "center">
+
+     <h1><strong>¿ y que dia es hoy ?</strong></h1>
+      <h2> hoy es : <script> dia_de_hoy();</script></h2>
+      <h3> hemos dicho que hoy es dia  <script>dia_de_hoy();</script></h3>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <style>
+        .micontenedor{
+            background-color: aqua;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          /* alert( $("#errores h2").html()); esto sirve para mostrar el contenido  dentro de elementos del dom */
+
+         /* $("#errores").html("<h1>se utiliza la funcion html , de jquery, para sustituir etiqueta y/o  texto</h1>");*/
+       
+           $("#errores").append("<p>utilizo la funcion append para agregar contenido  delante de la etiqueta html ,h2 </p>"); /*utilizada para agregar  despues  de una etiqueta html texto */
+           $("#errores").prepend("<p>utilizo la función prepend para agregar texto atras de la etiqueta html h2</p>"); /*utilizada para agregar  despues  de una etiqueta html texto */
+
+          $("#errores").before("agrega contenido despues del elemento selector del dom");
+          $("#errores").after("se agrega contenio despues del objeto seleccionado");
+         
+          $("#errores h2").text("mis errores a la hora de escribir el texto en etiquetas html , los solvento usando text ")
+       
+        });
+
+    </script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="errores" class="micontenedor">
+            <h2>mis errores</h2>
+        </div>
+    </div>
+
+        <h1>Este video explica como utilizar las funciones before,after,prepend, append,html y text  todas de la libreria jquery</h1>
+    <p>
+         Empezando por la funcion html, esta funcion permite  modificar la etiqueta html y/o el contenido 
+        esto dependera del selector desendiente que utilicemos en jquery.</p>
+       <p>  append y prepend , permiten agregar texto antes y despues  de un elemento  que seleccionamos del dom.</p>
+      <p>   mientras que la etiqueta before y after , agregan contenido  despues y antes del objeto seleccionado en el dom.
+
+    </p>
+     <p> la función text en cambio es utilizada para modificar solamente texto, no puede modificar etiquetas html.</p>
+</body>
+</html>

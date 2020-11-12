@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video 32 Jquery HTML</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function control() {
+         let nombre =document.getElementById("nombre").value;
+     
+         if(nombre == ""){ 
+             setTimeout(function(){ $("#nombre").after("por favor , ingresar el nombre por favor. ") }, 0);
+         }
+         else{
+     
+             alert("estas seguro que deseas enviar el  dato");
+         }
+     
+        }
+     </script>
+</head>
+<body id="contenido">
+
+     <input type="text" name="" id="nombre"> <br>
+
+    <input type="submit" value="control" onclick="control()">
+
+    
+</body>
+
+</html>

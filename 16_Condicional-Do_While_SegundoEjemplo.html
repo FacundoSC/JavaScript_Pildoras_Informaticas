@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body >
+
+     
+     <table>
+         <tbody>    
+             <tr>
+
+                 <td><label for="mensaje">Mensaje<textarea name="" id="mensaje" cols="30" rows="10"></textarea></label></td>
+                 <td><label for="intentos">Intentos:<input type="text" name="" id="intentos_realizados"></label></td>
+             
+             
+                </tr>
+             
+         </tbody>
+        </table>
+      
+    
+            
+</body>
+
+<script>
+    var   aleatorio = Math.round(Math.random()*100);
+    var mensaje =document.getElementById("mensaje");
+    var intentos_realizados= document.getElementById("intentos_realizados")
+    var intentos = 0; 
+    var b = 0;
+    do {
+      var numeroIngresado = parseInt(prompt("ingresar el numero que  crees que es", "Numero Entero del 0 al 100"));
+  
+    
+      if(numeroIngresado < aleatorio)
+      {   
+              mensaje.value= "el numero es mayor al ingresado";        
+      }
+      else if(numeroIngresado> aleatorio)
+      {
+             mensaje.value= "el numero es menor al ingresado";
+      }
+      else
+      {
+             b = 1;
+      }
+      intentos++;
+      
+    
+      intentos_realizados.value=intentos;
+     } while (intentos <3 && b == 0);
+
+    if( b == 0)
+    {  
+      if(numeroIngresado < aleatorio)
+      {   
+              mensaje.value= "el numero  A es mayor el I, mas suerte para la proxima";        
+      }
+      else 
+      {
+             mensaje.value= "el numero A es menor al I, mas suerte para la proxima";
+      }
+    }
+    else
+    {
+            mensaje.value= "adivinaste y lo hiciste en el intento #";
+    }
+
+   
+
+
+
+
+      
+  
+  </script>
+</html>
+
+ 
+

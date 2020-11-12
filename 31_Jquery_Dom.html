@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery y el DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<!--
+ en este ejemplo se mostrara los loop automaticos que agrega jquery vs programar en javascript  nativo y las funcionones anidadas.
+-->
+<!--Ejemplo 1-->
+
+<!--
+<script>
+  $(document).ready(function () {
+     
+    $("#carrusel img").hide(); /* lo mismo que hice  el queryall  y el for , lo he conseguido  con jquery en una linea , esto es el bucle automatico */
+
+  });
+</script>
+-->
+
+<!-- Ejemplo 2 -->
+
+<script>
+    $(document).ready(function () {
+        $("#carrusel img").width("200px").height("200px");
+        $("h1").text("Justice Ligue");
+    });
+
+
+</script>
+
+<body>
+   <h1 id="titulo">Liga de la Justicia </h1>
+ <div id="carrusel">
+    <img src="img/batman.jpg" alt="batman" width="250px" height="200px">
+    <img src="img/superman.jpg" alt="superman" width="250px" height="200px">
+    <img src="img/mujer maravilla.jpg" alt="wonderWoman" width="250px" height="200px">
+    <img src="img/acuaman.jpg" alt="acuaman"  width="250px" height="200px">
+    <img src="img/cyborg.jpg" alt="ciborg" width="250px" height="200px">
+ </div>
+  
+</body>
+
+   <!-- Ejemplo 1 -->
+
+<!--ocultamiento  con  javascript -->
+
+<!--
+<script>
+    var imagenes = document.querySelectorAll("#carrusel img"); /*  seleccioname todas las etiquetas que tengan */
+
+    for (let index = 0; index < imagenes.length; index++) {
+          imagenes[index].style.visibility = "hidden"; /* propiedad que  invisible a las imagenes*/       
+    }
+
+</script>
+-->
+   <!-- Ejemplo 2-->
+  <!-- utilizo dos funciones para disminuir el tamaño de las imagenes-->
+  <!--
+   <script>
+       var imagenes = document.querySelectorAll("#carrusel img");
+
+       for (let index = 0; index < imagenes.length; index++) {
+        imagenes[index].style.width="200px";
+        imagenes[index].style.height="200px";
+                   
+       }
+       var vector = document.getElementsByTagName("h1");
+       vector[0].innerHTML="Justice Ligue"
+
+   </script>
+-->
+
+
+</html>

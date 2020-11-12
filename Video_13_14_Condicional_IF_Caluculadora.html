@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+ 
+    <script>
+     
+       let numero1 = prompt("introduce el primer numero");
+       let numero2 =prompt("introduce el segundo numero");
+
+       if(!isNaN(numero1) && !isNaN(numero2)){
+        numero1= parseInt(numero1);
+        numero2 = parseInt(numero2);
+
+        let operacion = prompt("¿que operación deseas realizar? ej :suma/resta/multiplicación/división");
+         
+         if(operacion == "suma"){
+             alert("el resultado de la suma es : "+ (numero1+numero2));
+         }
+         else if(operacion == "resta"){
+             alert("el resultado de la resta es : "+(numero1-numero2));
+         }
+         else if(operacion == "multiplicación"){
+             alert("el resultado de la multiplicacion es : " +(numero1*numero2));
+         }
+         else if(operacion == "división"){
+            alert("el resultado de la division es : " +(numero1/numero2));
+         }
+         else{
+            alert("la operación ingresada no esta contemplada");     
+         }
+
+       }
+       else{
+            if( isNaN(numero1)){
+                if(isNaN(numero2)){
+                    alert("tanto numero1 , como numero2 son de tipo "+typeof(numero1));
+                }
+                else{
+                    alert("el numero1 es de tipo "+typeof(numero1)+" mientras que numero2 es un numero");
+                    }
+            }
+            else if(isNaN(numero2)){
+                     alert("el numero1 es de tipo numero  mientras que el el numero2 es de tipo "+typeof(numero2));
+                                   }
+            else {
+                     alert("falla tecnica , contactece con el admininstrador!!!");
+                }
+            
+           
+           
+       }
+    
+
+
+
+    </script>
+
+
+
+    
+    
+</body>
+</html>
